@@ -36,9 +36,9 @@ body{
 
 .main_image p{
     position:absolute;
-    right:05%;
-    bottom:65%;
-    width: 30%;
+    right: 05%;  
+    bottom: 65%;   
+    width: 30%; 
     text-align: center;
     font-family: open Sans;
     font-weight: bold;
