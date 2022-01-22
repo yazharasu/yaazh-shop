@@ -1,8 +1,3 @@
-/* ___________
-body {
-    font-family: 'Hind Madurai', 'Open Sans';
-}_________*/
-
 /*Variables*/
 :root{
     --color_1: #501F3A;
@@ -33,62 +28,26 @@ body{
     padding: 0 0;
     position: relative;
 }
-
-.main_image p{
-    position:absolute;
-    right: 05%;  
-    bottom: 65%;   
-    width: 30%; 
+.main_image h2{
+    position: absolute;
+    color: var(--font_3);
+    background-color: lightcyan;
     text-align: center;
     font-family: open Sans;
-    font-weight: bold;
+    margin: 0;
+    padding: 15px 20px;  
     font-size: 1em;
     line-height: 1.2em;
-    color: var(--font_3);
-}
 
-.main_image .percentage{
-    right: 30%;  
-    bottom: 60%;   
-    width: 30%; 
-}
-
-.main_image p span{
+}.main_image span{
     color: var(--font_2);
 }
-
-.block1{
-    background-color: var(--color_2);
-    color:var(--color_3);
-    margin-top: -10px;
-    margin-bottom: 20px;  
-    padding: 40px 15px;
-    text-algn: center;
-}
-
-.block1 p{
-    font-family: open Sans;
-    font-size: 1em;
-    line-height: 1.1em;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.block1 p:nth-child(1){
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.block3 h2{
+.block3 h2, .block4 h2, .block5 h2, .block6 h2{
     text-align:center;
     font-size: 1.25em;
     color:var(--color_2);
 }
-
-.block4{
+.block7{
     display: inline-block;
     background-color: var(--color_2);
     width: 100%;
@@ -96,13 +55,12 @@ body{
     padding: 10px 0;
     text-align: center;
 }
-.block4 p{
+.block7 p{
     padding: 5px 50px;
     display: inline-block;
     font-family: open Sans;
     font-size: 1em;
 }
-
 .copyright{
     background-color:var(--color_2);
     color: var(--font_3);
@@ -118,8 +76,8 @@ body{
     grid-template-columns: repeat(9, 1fr);
 }
 
-
-@media screen and (max-width:620px)   .nav_bar{
+@media screen and (max-width:620px) {
+    .nav_bar{
         width: 100%;
     }
 
@@ -140,13 +98,19 @@ body{
         border: 3px solid var(--font_3);
         border-radius: 15px;
         font-size: 1.5em;
-    }   
+    }
     .name h2{
         font-family: open Sans;
         font-size: 1em;
         padding: 0;
         margin: 5px;
     }
+    .main_image h2{
+        position: relative;
+        font-size: 1em;
+        margin: -5px 0 0 0  ;
+    }
+
 
     .grid .menu{
         grid-column: 4 / 10;
@@ -154,6 +118,9 @@ body{
         text-align: center;
         width: 100%;
         background-color: var(--color_2);
+    }
+    .menu ul{
+        float: left;
     }
     .menu li{
         display: inline-block;
@@ -167,49 +134,38 @@ body{
         color:var(--font_3);
     }
     
-    .col1, .col2, .col3{
-        grid-column:1 / 10;
-        color: var(--color_2);
-        text-align: center;
-        margin: 0 auto;
-        padding: 10px;
-        width: 90%;
-        max-width: 500px;
+    .block3 h2, .block4 h2, .block5 h2, .block6 h2{
+        font-size: 1.2em;
     }
-    .block2 h2{
-        padding: 10px;
-        margin: 0;
-        font-size: 1.5em;
-    }
-  
-    .block2 img{
-        width: auto;
-        max-width: 90%;
-        margin:10px auto;
-        max-height: 230px;   
-    }
-    
-    .block3{
+    .block3, .block4, .block5, .block6 {
         text-align: center;
     }
     .para_col{
-        text-align:center;
-        grid-column:1 / 10;
+        text-align: center;
+        grid-column: 1 / 10;
         font-size: 1em;
-        color:var(--color_2);
+        color: var(--color_2);
+    }
+    .block3{
+        background-color: var(--color_2);
+        padding: 10px;
+        margin: 0;
+    }
+    .block3 h2, .block3 p{
+        color: var(--color_3);
     }
     .linen_img{
         text-align:center;
         grid-column:1 / 10;
-        font-size: 1em;
+        font-size: 1.2em;
         width: 70%;
         max-width: 300px;
         margin:10px auto;
         padding: 0;
     }
-    .block3 h2, .block3 p{
+    .block3 h2, .block3 p, .block4 h2, .block4 p, .block5 h2, .block5 p, .block6 h2, .block6 p{
         width:90%;
-        max-width: 500px;
+        max-width: 600px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -265,12 +221,10 @@ body{
     }
 }
 
-
 @media screen and (min-width:620px) {
     .nav_bar{
         width: 100%;
     }
-
     .grid .name{
         width: 100%;
         grid-column: 1 / 3;
@@ -278,7 +232,6 @@ body{
         color: var(--color_3);
         text-align: center;
     }
-
     .name h1{
         font-family: 'Hind Madurai';
         padding: 0;
@@ -290,7 +243,6 @@ body{
         border-radius: 15px;
         font-size: 1.6em;
     }
-
     .name h2{
         font-family: open Sans;
         font-size: 1.2em;
@@ -305,7 +257,6 @@ body{
         width: 100%;
         background-color: var(--color_2);
     }
-
     .menu ul{
         float: left;
     }
@@ -322,55 +273,20 @@ body{
         color:var(--font_3);
     }
     
-    .main_image p{
-        bottom:55%;
-        font-size: 1.3em;
+    .main_image h2{
+        width: 240px;
+        right: 0%;
+        bottom:50%;
+        font-size: 1.2em;
     }
 
-    .block1 p{
-        font-family: open Sans;
-        font-size: 1.25em;
-        line-height: 1.1em;
-        width: 90%;
-        max-width: 600px;
+    .block3 h2, .block4 h2, .block5 h2, .block6 h2{
+        font-size: 1.2em;
     }
-    .block1 p:nth-child(1){
-        font-size: 1.5em;
-    }
-
-    .col1, .col2, .col3{
-        grid-column:1 / 10;
-        color: var(--color_2);
-        text-align: center;
-        margin: 0 auto;
-        padding: 10px;
-        width: 90%;
-        max-width: 600px;
-    }
-    .block2 h2{
-        padding: 10px;
-        margin: 0;
-        font-size: 1.5em;
-    }
-    .block2 p{
-        padding: 10px;
-        margin: 0;
-        font-size: 1.15em;
-        line-height: 1.2em;
-    }
-    .block2 img{
-        width: auto;
-        max-width: 100%;
-        margin:10px auto;
-        max-height: 250px;   
-    }
-
-    .block3{
+    .block3, .block4, .block5, .block6 {
         text-align: center;
     }
-    .block3 h2{
-        font-size: 1.5em;
-    }
+
     .para_col{
         text-align:center;
         grid-column: 1 / 10;
@@ -386,7 +302,7 @@ body{
         margin:10px auto;
         padding: 0;
     }
-    .block3 h2, .block3 p{
+    .block3 h2, .block3 p, .block4 h2, .block4 p, .block5 h2, .block5 p, .block6 h2, .block6 p{
         width:90%;
         max-width: 600px;
         margin-left: auto;
@@ -443,7 +359,7 @@ body{
         height: 40px;
     }
 
-    .block4 p{
+    .block7 p{
         padding: 5px 10px;
         width:30%;
         font-size: 1em;
@@ -487,8 +403,8 @@ body{
         width: 100%;
         background-color: var(--color_2);
         padding: 30px 0;
-    }
 
+    }
     .menu li{
         display: inline-block;
         padding: 0px 0px;
@@ -501,76 +417,22 @@ body{
     .menu li:hover{
         color:var(--font_3);
     }
- 
-    .main_image p{
+    .main_image h2{
+        width: 300px;
+        right: 0%;
         bottom:40%;
-        font-size: 2em;
-    }
-
-    .block1 {
-        padding:40px;
-    }
-    .block1 p{
-        font-family: open Sans;
-        font-size: 1.25em;
-        line-height: 1.25em;
-        width: 80%;
-        max-width: 600px;
-    }
-    .block1 p:nth-child(1){
         font-size: 1.5em;
     }
 
-    .col1{
-        grid-column:1 / 4;
-    }
-    .col2{
-        grid-column:4 / 7;
-    }
-    .col3{
-        grid-column: 7 / 10;
-    }
-    .col1, .col2, .col3{
-        color: var(--color_2);
-        text-align: center;
-        margin: 0 auto;
-        padding: 10px;
-        width: 90%;
-        max-width: 600px;
-    }
-    .block2{
-        position:relative;
-    }
-    .block2 h2{
-        padding: 10px;
-        margin: 0;
+    .block3 h2, .block4 h2, .block5 h2, .block6 h2{
         font-size: 1.6em;
     }
-    .block2 p{
-        padding: 10px;
-        margin: 0;
-        font-size: 1.2em;
-        line-height: 1.2em;
-    }
-    .block2 img{
-        width: 90%;
-        margin:10px auto;
-        max-height: 250px;
-    }
-  
-    .block2 img:hover{
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
-
-    .block3{
+    .block3, .block4, .block5, .block6 {
         text-align: center;
     }
-    .block3 h2{
-        font-size: 1.6em;
-    }
-    .fab .para_col{
+    .block4 .para_col, .block6 .para_col{
         text-align:center;
-        grid-column: 1 / 4;
+        grid-column: 1 / 6;
         font-size: 1.3em;
         line-height: 1.25em;
         color:var(--color_2);
@@ -578,41 +440,67 @@ body{
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-        width: 80%;
+        width: 70%;
     }
-    .fab .linen_img1{
-        grid-column: 4 / 7;
+    .grid .linen_img1{
+        grid-column: 6 / 8;
     }
-    .fab .linen_img2{
-        grid-column: 7 / 10;
+    .grid .linen_img2{
+        grid-column: 8 / 10;
     }
-
     .linen_img1, .linen_img2{
         text-align: center;
         font-size: 1.2em;
-        max-width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
         margin-bottom: 20px;
         width: 90%;
+        height: 230px;
     }
     .linen_img:hover{
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
+    .block3 .para_col{
+        grid-column: 1 / 10;
+    }
+    .block5 .para_col{
+        grid-column: 1 / 6;
+    }
 
-    .block5 .fot_col1{
+    .block3 .para_col, .block5 .para_col{
+        text-align:center;
+        font-size: 1.3em;
+        line-height: 1.25em;
+        color:var(--color_3);
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 70%;
+    }
+    .block3, .block5{
+        background-color: var(--color_2);
+        color: whitesmoke;
+        padding:20px;
+    }
+    .block3 h2, .block5 h2{
+        color: var(--color_3);
+    }
+
+
+    .block8 .fot_col1{
         grid-column: 1 / 4;
         text-align: center;
         margin: 10px 15px;
     }
-    .block5 .fot_col2{
+    .block8 .fot_col2{
         grid-column: 4 / 7;
         text-align: center;
         margin: 10px 15px;
         display: block;
     }
-    .block5 .fot_col3{
+    .block8 .fot_col3{
         grid-column: 7 / 10;
         text-align: center;
         margin: 10px 15px;
@@ -669,7 +557,7 @@ body{
         box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
     }
 
-    .block4 p{
+    .block7 p{
         padding: 5px 10px;
         width:30%;
         font-size: 1em;
@@ -683,4 +571,3 @@ body{
         font-family: open Sans;
     }    
 }
-
